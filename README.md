@@ -27,5 +27,6 @@ Select your meshes and click. Performs the Merge (By Distance), Smooth (Beauty) 
 Flip weights by renaming anything with _L and _R. Made to work with FFXIV and BG3 rigs. Mostly BG3 because, again, lazy and I can't be bothered fixing the x-flip on export.
 
 ## How use thing
+Download using the `< > Code` button.<BR>
 Install in Blender.👍`Edit` > `Preferences` > `Add-ons`.
 
