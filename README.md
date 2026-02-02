@@ -21,7 +21,7 @@ Select your meshes and click. Performs the Merge (By Distance), Smooth (Beauty) 
 ### Morph Setup
 1. Modifier Setup: Applies the Surface Deform and Smooth Corrective modifiers to the selected meshes and places them above any Armature modifiers. Does NOT bind anything.
 2. Bind Surface Deform: Batch bind to a selected mesh. Use the eyedropper or type the target mesh directly into the Morph Target field.
-3. Clean-Up: Applies the Surface Deform and Smooth Corrective modifiers on selected objects, and adds an Armature modifier if one doesn't exist. If you target an Armature as a target, it will assign it to the Armature modifier as well.
+3. Clean-Up: Applies the Surface Deform and Smooth Corrective modifiers on selected objects, and adds an Armature modifier if one doesn't exist. If you target an Armature as a target, it will assign it to the Armature modifier as well, and parent the selected objects to that armature.
 
 ### Corrections
 Flip weights by renaming anything with _L and _R. Made to work with FFXIV and BG3 rigs. Mostly BG3 because, again, lazy and I can't be bothered fixing the x-flip on export.
