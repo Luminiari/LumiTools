@@ -174,7 +174,8 @@ class LUMITOOLS_OT_cleanup_armature(Operator):
     bl_label = "Clean-Up"
     bl_description = (
         "Apply Surface Deform and Corrective Smooth modifiers, then ensure\n"
-        "an Armature modifier exists. Optionally assigns an Armature Target"
+        "an Armature modifier exists. Optionally assigns an Armature Target\n"
+        "and parents to that armature"
     )
     bl_options = {"REGISTER", "UNDO"}
 
@@ -226,6 +227,8 @@ class LUMITOOLS_OT_cleanup_armature(Operator):
 
             if arm_target:
                 arm.object = arm_target
+                obj.parent = arm_target
+                obj.matrix_parent_inverse = arm_target.matrix_world.inverted()
 
         vl.objects.active = old_active
         self.report({"INFO"}, "Clean-up complete.")
